@@ -25,11 +25,14 @@ public class Main {
 
         System.out.print("Задание 4\n");
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = 0; i < reverseFullName.length / 2; i++) {
-            char temp = reverseFullName[i];
-            reverseFullName[i] = reverseFullName[reverseFullName.length - i - 1];
-            reverseFullName[reverseFullName.length - i - 1] = temp;
+        for (int i = reverseFullName.length - 1; i >= 0 ; i--) {
+            System.out.print(reverseFullName[i]);
         }
-        System.out.println(Arrays.toString(reverseFullName));
+//        for (int i = 0; i < reverseFullName.length / 2; i++) {
+//            char temp = reverseFullName[i];
+//            reverseFullName[i] = reverseFullName[reverseFullName.length - i - 1];
+//            reverseFullName[reverseFullName.length - i - 1] = temp;
+//        }
+//        System.out.println(Arrays.toString(reverseFullName));
     }
 }
